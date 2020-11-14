@@ -40,6 +40,8 @@ function expenseAdder(event){
         //Appends everything on the list
         tableAdd.appendChild(newTr);
         inputName.value = '';
+        dateInput.value = '';
+        amountInput.value = '';
     }
 
 }
@@ -50,7 +52,6 @@ function deleteChecker(e) {
     if(item.classList[0] === 'delete-btn'){
         const todo = item.parentNode;
         todo.remove();
-        tableEmpty();
     }
 
 }
